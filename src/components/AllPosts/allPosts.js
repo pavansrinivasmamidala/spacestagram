@@ -25,23 +25,21 @@ function AllPosts() {
   return (
     <Suspense fallback={<Loading />}>
       <div className="flex justify-center flex-col items-center ">
-        <div className="text-4xl font-semibold p-10 items-start">
-          Spacestagram
-        </div>
-
+        <Suspense fallback={<Loading />}>
         <div className="flex justify-center flex-col items-center w-full">
           {posts.map((item, idx) => {
             return <Post props={item} key={idx} />;
           })}
         </div>
-        <div>
+        </Suspense>
+        {/* <div>
           <button
             className="border-none shadow-md hover:shadow-lg bg-blue-500 p-6 mb-20 text-2xl rounded-xl text-white font-bold hover:-translate-y-2 transition-all ease-in-out duration-300"
             onClick={handleClick}
           >
             Load More
           </button>
-        </div>
+        </div> */}
       </div>
     </Suspense>
   );
