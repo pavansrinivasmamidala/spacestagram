@@ -5,6 +5,8 @@ import App from "./App";
 import reportWebVitals from "./reportWebVitals";
 import { Suspense } from "react/cjs/react.production.min";
 import Loading from "./helpers/loading";
+
+
 ReactDOM.render(
   <React.StrictMode>
     <Suspense fallback={<Loading />}>

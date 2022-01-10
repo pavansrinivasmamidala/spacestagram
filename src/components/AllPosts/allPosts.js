@@ -1,47 +1,38 @@
 import { useEffect, useState } from "react";
 import { getImages } from "../../api/fetchData";
 import Post from "../Post/post";
-import { Suspense } from "react";
-import Loading from "../../helpers/loading";
 
 function AllPosts() {
   const [posts, setPosts] = useState([]);
 
-  useEffect(() => {
-    getImages().then((response) => setPosts(response));
-    console.log(posts);
+  useEffect(() => {  
+    getImages().then((response) => setPosts(response)); // fetching images and its data
+    console.log(posts);   
   }, []);
 
   const handleClick = () => {
-    // getImages().then((response) =>
-    //   setPosts((posts) => [...posts, ...response])
-    // );
+    getImages().then((response) =>
+      setPosts((posts) => [...posts, ...response]) // appending new data to the previous posts when load more is clicked
+    );
   };
 
-  if (posts === []) {
-    return <Loading />;
-  }
-
-  return (
-    <Suspense fallback={<Loading />}>
+    return (
+    <div className="flex justify-center flex-col items-center  ">   
       <div className="flex justify-center flex-col items-center ">
-        <Suspense fallback={<Loading />}>
-        <div className="flex justify-center flex-col items-center w-full">
-          {posts.map((item, idx) => {
-            return <Post props={item} key={idx} />;
-          })}
-        </div>
-        </Suspense>
-        {/* <div>
-          <button
-            className="border-none shadow-md hover:shadow-lg bg-blue-500 p-6 mb-20 text-2xl rounded-xl text-white font-bold hover:-translate-y-2 transition-all ease-in-out duration-300"
-            onClick={handleClick}
-          >
-            Load More
-          </button>
-        </div> */}
+        {posts.map((item, idx) => {
+          return <Post props={item} key={idx} />; // iterate through every post
+        })}
       </div>
-    </Suspense>
+
+      <div>
+        <button
+          className="border-none shadow-md hover:shadow-xl bg-slate-400 hover:bg-slate-500 p-6 mb-10 mt-10 text-2xl rounded-xl hover:text-white  font-bold hover:-translate-y-2 transition-all ease-in-out duration-300"
+          onClick={handleClick}
+        >
+          Load More
+        </button>
+      </div>
+    </div>
   );
 }
 
