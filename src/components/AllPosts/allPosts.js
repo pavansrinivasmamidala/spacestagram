@@ -9,9 +9,12 @@ function AllPosts() {
   const [loading, setLoading] = useState(true);
   useEffect(() => {
     setTimeout(() => {
-      getImages().then((response) => setPosts(response)); // fetching images and its data
-    }, 1000);
-    setLoading(false);
+      getImages().then((response) => {
+        setLoading(false);
+        setPosts(response);
+      }); // fetching images and its data
+    }, 3000);
+
     console.log(posts);
   }, []);
 
@@ -21,6 +24,7 @@ function AllPosts() {
     );
   }; //bg-gradient-to-r from-slate-200 to-indigo-100
 
+  console.log(loading);
   return loading ? (
     <Loading />
   ) : (

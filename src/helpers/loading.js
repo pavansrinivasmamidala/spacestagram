@@ -1,10 +1,13 @@
-import spinner from "../assets/Spinner.gif";
+import rocket from "../assets/rocket.png";
 
 export default function Loading() {
     return (
-        <div className="flex justify-items-center items-center h-screen">
-            <img src={spinner} className="h-40 w-40" alt="Loading"/>
-            
+        <div className="flex justify-center items-center h-screen absolute right-0 left-0 top-0 bottom-0 w-screen bg-black z-20 ">
+            <img 
+                    className="animate-rocketAnimation"
+                    src={rocket}
+                    alt=""
+                    />   
         </div>
     )
 }
