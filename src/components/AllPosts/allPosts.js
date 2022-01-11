@@ -2,12 +2,16 @@ import { useEffect, useState } from "react";
 import { getImages } from "../../api/fetchData";
 import greenPlanet from "../../assets/green-planet.png";
 import Post from "../Post/post";
+import Loading from "../../helpers/loading";
 
 function AllPosts() {
   const [posts, setPosts] = useState([]);
-
+  const [loading, setLoading] = useState(true);
   useEffect(() => {
-    getImages().then((response) => setPosts(response)); // fetching images and its data
+    setTimeout(() => {
+      getImages().then((response) => setPosts(response)); // fetching images and its data
+    }, 1000);
+    setLoading(false);
     console.log(posts);
   }, []);
 
@@ -17,21 +21,18 @@ function AllPosts() {
     );
   }; //bg-gradient-to-r from-slate-200 to-indigo-100
 
-  return (
-    <div className="flex justify-center flex-col items-center dark:text-slate-200 dark:bg-black dark:shadow-slate-100 dark:shadow-xl  pb-40 overflow-hidden">
-      
+  return loading ? (
+    <Loading />
+  ) : (
+    <div className="flex justify-center flex-col items-center dark:text-slate-200 dark:bg-black dark:shadow-slate-100 dark:shadow-xl  pb-40 overflow-hidden pt-10">
       <div className="flex justify-center flex-col items-center z-10">
         {posts.map((item, idx) => {
-           return <Post props={item} key={idx} />; // iterate through every post
+          return <Post props={item} key={idx} />; // iterate through every post
         })}
       </div>
-        
+
       <div className="absolute right-[-15vh] animate-wiggleLeftAndRight opacity-75 dark:block hidden ">
-        <img
-        className="h-[50vh]"
-        src={greenPlanet}
-        alt=""
-        />
+        <img className="h-[50vh]" src={greenPlanet} alt="" />
       </div>
 
       <div>

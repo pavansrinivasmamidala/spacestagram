@@ -1,8 +1,11 @@
 import planet from "../../assets/planet-image.png";
 import earth from "../../assets/earth.png";
+import space from "../../assets/space.jpg"
 function NavBar() {
   return (
-    <div className="flex  justify-center items-center lg:h-1/6 md:h-2/6 sm:h-3/12 shadow-xl  z-10 sticky bg-slate-100  dark:text-slate-100 dark:bg-black dark:shadow-blue-800 dark:shadow-sm dark:bg-[url('/home/pavan/Documents/shopify-intern/spacestagram/src/assets/space.jpg')]">
+    <div className="flex  justify-center items-center lg:h-1/6 md:h-2/6 sm:h-3/12 shadow-xl  z-10 sticky bg-slate-100  dark:text-slate-100 dark:bg-black dark:shadow-blue-800 dark:shadow-sm " style={{
+      backgroundImage:`url("${space}")`
+    }}>
       <div className="flex flex-col justify-center items-center">
       <div className="text-4xl font-bold  pt-10 text-blue-500">
         Spacestagram

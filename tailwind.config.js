@@ -28,9 +28,7 @@ module.exports = {
             transform:'translateY(-40%)'
           }
         },
-        backgroundImage: {        
-          'space': "url('/home/pavan/Documents/shopify-intern/spacestagram/src/assets/space.jpg')",        
-        }
+       
       },
       animation:{
           wiggleLeftAndRight:'wiggleLeftAndRight 2s ease-in-out infinite',
