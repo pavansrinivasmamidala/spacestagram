@@ -15,13 +15,13 @@ function Post({ props }) {
 
   return (
     <div
-      className="flex flex-col   hover:shadow-xl rounded-xl m-10 group bg-slate-100 dark:hover:fill-slate-700 dark:hover:drop-shadow-lg hover:bg-slate-200 dark:bg-black dark:shadow-sm dark:shadow-blue-800   ease-in-out  cursor-pointer  transition-all max-w-3xl"
+      className="flex flex-col   hover:shadow-xl rounded-xl m-10 group bg-slate-100 dark:hover:fill-slate-700 dark:hover:drop-shadow-lg hover:bg-slate-200 dark:bg-black   dark:shadow-sm dark:shadow-blue-800   ease-in-out  cursor-pointer  transition-all max-w-2xl"
       onClick={() =>setLike(!like)}
     >
       <div className="flex items-center justify-center ">
         <img
           src={data.url}
-          className="rounded-xl object-fill group-hover:opacity-[0.9] opacity-100  transition-all ease-in-out shadow-xl"
+          className="rounded-xl object-fill group-hover:opacity-[0.9]   transition-all ease-in-out shadow-xl"
           alt=""
         />
       </div>

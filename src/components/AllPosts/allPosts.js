@@ -1,6 +1,6 @@
 import { useEffect, useState } from "react";
 import { getImages } from "../../api/fetchData";
-import earth from "../../assets/earth.png";
+import greenPlanet from "../../assets/green-planet.png";
 import Post from "../Post/post";
 
 function AllPosts() {
@@ -18,34 +18,30 @@ function AllPosts() {
   }; //bg-gradient-to-r from-slate-200 to-indigo-100
 
   return (
-    <div className="flex justify-center flex-col items-center dark:text-slate-200 dark:bg-black dark:shadow-slate-100 dark:shadow-xl  pb-40">
+    <div className="flex justify-center flex-col items-center dark:text-slate-200 dark:bg-black dark:shadow-slate-100 dark:shadow-xl  pb-40 overflow-hidden">
       
       <div className="flex justify-center flex-col items-center z-10">
         {posts.map((item, idx) => {
-          if (idx < 10) return <Post props={item} key={idx} />; // iterate through every post
+           return <Post props={item} key={idx} />; // iterate through every post
         })}
       </div>
-      {/* <div className="flex justify-center flex-col items-center ">
-        {posts.map((item, idx) => {
-          if(idx >= 10 && idx < 20)
-         return <Post props={item} key={idx} />  // iterate through every post
-        })}
+        
+      <div className="absolute right-[-15vh] animate-wiggleLeftAndRight opacity-75 dark:block hidden ">
+        <img
+        className="h-[50vh]"
+        src={greenPlanet}
+        alt=""
+        />
       </div>
-      <div className="flex justify-center flex-col items-center ">
-        {posts.map((item, idx) => {
-          if(idx >= 20)
-         return <Post props={item} key={idx} />  // iterate through every post
-        })}
-      </div> */}
 
-      {/* <div>
+      <div>
         <button
-          className="border-none shadow-md hover:shadow-xl bg-slate-400 hover:bg-slate-500 p-6 mb-10 mt-10 text-2xl rounded-xl hover:text-white  font-bold hover:-translate-y-2 transition-all ease-in-out duration-300"
+          className="border-none shadow-md hover:shadow-xl bg-slate-400 hover:bg-slate-500 p-6 mb-10 mt-10 dark:bg-blue-800 text-2xl rounded-xl hover:text-white  font-bold hover:-translate-y-2 transition-all ease-in-out duration-300"
           onClick={handleClick}
         >
           Load More
         </button>
-      </div> */}
+      </div>
     </div>
   );
 }

@@ -20,13 +20,22 @@ module.exports = {
             transform:'translateY(-6%)'
           }
         },
+        rocketAnimation:{
+          '0% 100%':{
+            transform:'translateY(10%)'
+          },
+          '75%':{
+            transform:'translateY(-40%)'
+          }
+        },
         backgroundImage: {        
           'space': "url('/home/pavan/Documents/shopify-intern/spacestagram/src/assets/space.jpg')",        
         }
       },
       animation:{
           wiggleLeftAndRight:'wiggleLeftAndRight 2s ease-in-out infinite',
-          wiggleTopAndBottom:'wiggleTopAndBottom 2s ease-in-out infinite'
+          wiggleTopAndBottom:'wiggleTopAndBottom 2s ease-in-out infinite',
+          rocketAnimation:'rocketAnimation 3s ease-in-out infinite'
 
       }
     },
