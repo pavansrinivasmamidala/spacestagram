@@ -14,7 +14,6 @@ function AllPosts() {
       setPosts(response);
       setLoading(false);
     }); // fetching images and its data
-    console.log(posts);
   }, []);
 
   const handleClick = () => {

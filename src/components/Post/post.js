@@ -14,7 +14,7 @@ function Post({ props }) {
 
   return (
     <div
-      className="flex flex-col shadow-lg rounded-xl m-10 group   hover:shadow-2xl    shadow-blue-800   ease-in-out  cursor-pointer  transition-all max-w-2xl"
+      className="flex flex-col shadow-lg rounded-xl m-10 group  bg-black hover:shadow-2xl    shadow-blue-800   ease-in-out  cursor-pointer  transition-all max-w-2xl"
       onClick={() =>setLike(!like)}
     >
       <div className="flex items-center justify-center ">

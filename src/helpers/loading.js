@@ -6,7 +6,7 @@ export default function Loading() {
             <img 
                     className="animate-rocketAnimation"
                     src={rocket}
-                    alt=""
+                    alt="Rocket Animation"
                     />   
         </div>
     )
