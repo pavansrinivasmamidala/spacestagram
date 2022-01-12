@@ -3,7 +3,7 @@ import axios from "axios";
 export async function getImages() {
   try {
     const { data: response } = await axios.get(
-      "https://api.nasa.gov/planetary/apod?api_key=7aOnFz6aoLe5BVeSnURKDee0oMeh6ZZXi6b6M4cV&count=5"
+      "https://api.nasa.gov/planetary/apod?api_key=t3YbP5nPNKOD1Y7H04u7v6EbMbVY3YcLsbCuLAsF&count=5"
     );
     console.log(response);
     return response;
@@ -15,7 +15,7 @@ export async function getImages() {
 export async function getImagesByDays(from,to) {
   try {
     const { data: response } = await axios.get(
-       `https://api.nasa.gov/planetary/apod?api_key=7aOnFz6aoLe5BVeSnURKDee0oMeh6ZZXi6b6M4cV&start_date=${from}&end_date=${to}`
+       `https://api.nasa.gov/planetary/apod?api_key=t3YbP5nPNKOD1Y7H04u7v6EbMbVY3YcLsbCuLAsF&start_date=${from}&end_date=${to}` // wanted to include a date picker 
     );
     console.log(response);
     return response;
