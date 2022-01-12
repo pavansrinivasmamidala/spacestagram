@@ -1,7 +1,7 @@
 
 <br />
 <p align="center">
-    <img src="https://raw.githubusercontent.com/pavansrinivasmamidala/spacestagram/main/src/assets/readme-logo.png" alt="Logo" width="100" height="100" style="border-radius:"100%"">
+    <img src="https://raw.githubusercontent.com/pavansrinivasmamidala/spacestagram/main/src/assets/readme-logo.png" alt="Logo" width="105" height="100" style="border-radius:"100%"">
   </a>
   <h3 align="center">Spacestagram</h3>
   <p align="center">
