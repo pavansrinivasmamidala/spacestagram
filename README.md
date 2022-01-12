@@ -56,5 +56,5 @@ I built this using a Web First mindset and I made some design decisions based on
 
 ## Usage
 
-
+<img src="https://raw.githubusercontent.com/pavansrinivasmamidala/spacestagram/main/Video%20for%20Readme/recording.gif" alt="Usage Gif" />
 
