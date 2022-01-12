@@ -26,7 +26,7 @@ function NavBar() {
           alt="Planet"
         />
       </div>
-      <div className="absolute left-[-200px] animate-wiggleLeftAndRight top-[500px]">
+      <div className="absolute left-[-200px] animate-wiggleLeftAndRight top-[600px]">
         <img className="rounded-full h-[70vh] opacity-75" src={earth} alt="Earth" />
       </div>
     </div>

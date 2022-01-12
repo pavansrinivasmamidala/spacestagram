@@ -1,16 +1,13 @@
-import nasa from "../../assets/nasa.jpg";
-import purplePlanet from "../../assets/purple-planet.png";
+
 
 function Footer() {
   return (
     <div>
-      <div className="z-0 overflow-visible absolute  left-[-10vh] mb-32 hidden ">
-        <img className="rounded-full " src={purplePlanet} alt="purple planet" />
-      </div>
-      <div className="flex justify-between items-center z-10 bg-black overflow-hidden shadow-md shadow-blue-500 border-y border-blue-600 shadow-outer">
+      
+      <div className="flex justify-between items-center z-100  bg-black  shadow-md   shadow-outer">
         <div className="flex justify-center items-center">
-          <img className="h-80 p-20 rounded-full " src={nasa} alt="Nasa Logo" />
-          <div className="">
+          <div className="h-80 p-20 rounded-full "   />
+          <div className="pl-96">
             <div className="text-white text-2xl ">
               National Aeronautics and Space Administration
             </div>
@@ -26,13 +23,13 @@ function Footer() {
             Image sharing from the Final Frontier
           </div>
           <div className="text-blue-500 text-md pt-4 flex">
-            <div className="pr-2">Developed by:</div>
+            <div className="pr-2 font-semibold">Developed by:</div>
             <div className="pointer">
               <a
                 href="https://pavansrinivas.tech"
                 target="_blank"
                 rel="noreferrer"
-                className="pointer"
+                className="pointer text-purple-500"
               >
                 @pavan_srinivas
               </a>

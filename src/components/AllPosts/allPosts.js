@@ -27,23 +27,36 @@ function AllPosts() {
     <Loading />
   ) : (
     <div className="flex justify-center flex-col items-center  text-slate-200 bg-black shadow-slate-100 shadow-xl  pb-40 overflow-hidden pt-10">
-      <div className="flex justify-center flex-col items-center z-10">
+      <div className="flex justify-center flex-col items-center ">
         {posts.map((item, idx) => {
           return <Post props={item} key={idx} />; // iterate through every post
         })}
       </div>
 
       <div className="absolute right-[-15vh] animate-wiggleLeftAndRight opacity-75 ">
-        <img className="h-[50vh]" src={greenPlanet} alt="" />
+        <img className="h-[50vh]" src={greenPlanet} alt="green planet" />
       </div>
 
+      <div className="flex justify-between items-center">
+        <div className="">
+        <img
+        className=" z-1 left-0 absolute h-[55vh]  scale-95  animate-wiggleLeftAndRight  rounded-full "
+        src={purplePlanet}
+        alt="purple planet"
+      />
+        </div>
       <div>
-        <button
-          className="border-none shadow-md hover:shadow-xl  p-6 mb-10 mt-10 bg-blue-800 text-2xl rounded-xl hover:text-white  font-bold hover:-translate-y-2 transition-all ease-in-out duration-300"
+      <button
+          className="border-none z-10 shadow-md hover:shadow-xl max-h-20 p-6 mb-10 mt-10 bg-blue-800 text-2xl  rounded-xl hover:text-white  font-bold hover:-translate-y-2 transition-all ease-in-out duration-300"
           onClick={handleClick}
         >
           Load More
         </button>
+      </div>
+       
+        <div>
+          {" "}
+        </div>
       </div>
     </div>
   );
