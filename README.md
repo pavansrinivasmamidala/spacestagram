@@ -24,12 +24,13 @@
       <ul>
         <li><a href="#built-with">Built With</a></li>
           <li><a href="#considerations">Considerations</a></li>
-        <li><a href="#contact">Contact</a></li>
+          <li><a href="#features">Features</a></li>
+        <li><a href="#special-thanks">Special Thanks</a></li>
       </ul>
     </li>
     </li>
     <li><a href="#usage">Usage</a></li>
-    <li><a href="#roadmap">Roadmap</a></li>
+    <li><a href="#roadmap">Features</a></li>
   </ol>
 </details>
 
@@ -54,7 +55,29 @@ I planned on using many other technologies and after a little planning on how to
 
 I built this using a Web First mindset and I made some design decisions based on this view. 
 
-## Usage
 
-<img src="https://raw.githubusercontent.com/pavansrinivasmamidala/spacestagram/main/Video%20for%20Readme/recording.gif" alt="Usage Gif" />
+### Usage
+
+Go to: ![View App](https://spacestagram-lyart.vercel.app)
+
+### Features
+
+<ul>
+    <li>Displays the Image, Title, Description and the Day posted.</li>
+    <li>We can like and dislike a post</li>
+    <li>A Load more button to load more posts</li>
+    <li>A Loading animation until the data is fetched from the API</li>
+    <li>Simple and Eye Catchy Design with space theme</li>
+</ul>
+
+### Special Thanks
+
+<ul>
+    <li><a href="https://api.nasa.gov/#apod">NASA</a> for their robust API</li>
+    <li><a href="https://stackoverflow.com/">StackOverflow</a> and other forums </li>
+    <li><a href="https://www.shopify.ca/">Shopify</a> for giving me a chance to build and showcase something interesting</li>
+    <li><a href="https://reactjs.org/">React</a> and <a href="https://tailwindcss.com/">Tailwind</a> for their Awesome Libraries which made my Development Experience better.</li>
+    
+</ul>
+
 
