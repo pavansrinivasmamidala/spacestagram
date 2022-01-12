@@ -12,10 +12,11 @@ function NavBar() {
     >
       <div className="flex flex-col justify-center items-center">
         <div className="text-4xl font-bold  pt-5 text-blue-500">
-          Spacestagram
+
+          <span>Spacestagram</span>
         </div>
         <div className="text-lg font-semibold pt-3 pb-8 text-blue-300">
-          Image sharing from the Final Frontier
+          <span>Image sharing from the Final Frontier</span>
         </div>
       </div>
 

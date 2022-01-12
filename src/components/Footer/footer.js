@@ -5,10 +5,11 @@ function Footer() {
         <div className="h-80 p-20 rounded-full " />
         <div className="pl-96">
           <div className="text-white text-2xl ">
-            National Aeronautics and Space Administration
+           <span> National Aeronautics and Space Administration</span>
           </div>
           <div className="text-white text-lg pt-2">
-            Astronomy Picture of the Day
+            <span>Astronomy Picture of the Day</span>
+            
           </div>
         </div>
       </div>
@@ -16,7 +17,8 @@ function Footer() {
       <div className="pr-60">
         <div className="text-white text-2xl pr-40">Spacestagram</div>
         <div className="text-white text-lg pt-4">
-          Image sharing from the Final Frontier
+          <span>Image sharing from the Final Frontier</span>
+          
         </div>
         <div className="text-blue-500 text-md pt-4 flex">
           <div className="pr-2 font-semibold">Developed by:</div>
@@ -27,7 +29,7 @@ function Footer() {
               rel="noreferrer"
               className="pointer text-purple-500"
             >
-              @pavan_srinivas
+             <span>@pavan_srinivas</span> 
             </a>
           </div>
         </div>
