@@ -39,7 +39,7 @@ function AllPosts() {
       <div className="flex justify-between items-center">
         <div className="">
         <img
-        className=" z-1 left-0 absolute h-[55vh]  scale-95  animate-wiggleLeftAndRight  rounded-full "
+        className=" z-1 left-0 absolute  md:h-[45vh] 2xl:h-[40vh] xl:h-[55vh] lg:h-[50vh]  animate-wiggleLeftAndRight  rounded-full "
         src={purplePlanet}
         alt="purple planet"
       />

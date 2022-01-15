@@ -3,7 +3,7 @@ function Footer() {
     <div className="flex justify-between items-center z-100  bg-black  shadow-md   shadow-outer">
       <div className="flex justify-center items-center">
         <div className="h-80 p-20 rounded-full " />
-        <div className="pl-96">
+        <div className="pl-[20vw] sm:hidden md:hidden lg:block">
           <div className="text-white text-2xl ">
            <span> National Aeronautics and Space Administration</span>
           </div>
@@ -14,13 +14,13 @@ function Footer() {
         </div>
       </div>
 
-      <div className="pr-60">
-        <div className="text-white text-2xl pr-40">Spacestagram</div>
+      <div className="pr-[10vw] sm:mt-[20vh] md:mt-0">
+        <div className="text-white text-2xl pr-[5vw]">Spacestagram</div>
         <div className="text-white text-lg pt-4">
           <span>Image sharing from the Final Frontier</span>
           
         </div>
-        <div className="text-blue-500 text-md pt-4 flex">
+        <div className="text-blue-500 text-md pt-4 flex ">
           <div className="pr-2 font-semibold">Developed by:</div>
           <div className="pointer">
             <a

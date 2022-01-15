@@ -11,7 +11,7 @@ function NavBar() {
       }}
     >
       <div className="flex flex-col justify-center items-center">
-        <div className="text-4xl font-bold  pt-5 text-blue-500">
+        <div className="text-4xl font-bold  pt-5 text-green-100">
 
           <span>Spacestagram</span>
         </div>
